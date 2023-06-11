@@ -1,28 +1,46 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
+  logo,
+  coding,
+  datascience,
+  uxdesign,
+  robotics,
+  github,
+  menu,
+  close,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  reactjs,
+  tailwind,
+  typescript,
+  threejs,
+  Arduino,
+  Cpp,
+  express,
+  Firebase,
+  gitlab,
+  Jupyter,
+  keras,
+  mui,
+  NumPy,
+  OpenCV,
+  pandas,
+  PyTorch,
+  SageMaker,
+  scikit,
+  TensorFlow,
+  Python,
+
   meta,
+  shopify,
   starbucks,
   tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -43,19 +61,19 @@ export const navLinks = [
 const services = [
   {
     title: "ML Engineering",
-    icon: web,
+    icon: coding,
   },
   {
     title: "Data Science",
-    icon: mobile,
+    icon: datascience,
   },
   {
-    title: "UI Development",
-    icon: backend,
+    title: "UI Design",
+    icon: uxdesign,
   },
   {
     title: "Robotics",
-    icon: creator,
+    icon: robotics,
   },
 ];
 
@@ -73,25 +91,30 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "C++",
+    icon: Cpp,
   },
+  {
+    name: "Python",
+    icon: Python,
+  },
+
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: tailwind,
+  // },
+  // {
+  //   name: "Node JS",
+  //   icon: nodejs,
+  // },
   {
     name: "MongoDB",
     icon: mongodb,
@@ -105,12 +128,60 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "gitlab",
+    icon: gitlab,
   },
+  // {
+  //   name: "Arduino",
+  //   icon: Arduino,
+  // },
   {
-    name: "docker",
-    icon: docker,
+    name: "Express JS",
+    icon: express,
+  },
+  // {
+  //   name: "Firebase",
+  //   icon: Firebase,
+  // },
+  // {
+  //   name: "Jupyter",
+  //   icon: Jupyter,
+  // },
+  // {
+  //   name: "Keras",
+  //   icon: keras,
+  // },
+  // {
+  //   name: "Material UI",
+  //   icon: mui,
+  // },
+  {
+    name: "NumPy",
+    icon: NumPy,
+  },
+  // {
+  //   name: "OpenCV",
+  //   icon: OpenCV,
+  // },
+  {
+    name: "Pandas",
+    icon: pandas,
+  },
+  // {
+  //   name: "PyTorch",
+  //   icon: PyTorch,
+  // },
+  // {
+  //   name: "SageMaker",
+  //   icon: SageMaker,
+  // },
+  // {
+  //   name: "scikit-learn",
+  //   icon: scikit,
+  // },
+  {
+    name: "TensorFlow",
+    icon: TensorFlow,
   },
 ];
 

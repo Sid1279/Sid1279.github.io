@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { Dragon } from "./canvas";
 
 const TypewriterText = () => {
   const texts = [
@@ -74,7 +74,7 @@ const Hero = () => {
           <TypewriterText />
         </div>
       </div>
-      <ComputersCanvas />
+      <Dragon />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

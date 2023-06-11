@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import * as THREE from 'three';
 import {
@@ -11,7 +11,7 @@ import {
 
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
+const Ball =  React.memo((props) => {
   const [decal] = useTexture([props.imgUrl]);
   decal.minFilter = THREE.LinearFilter;
   decal.magFilter = THREE.LinearFilter;
@@ -39,15 +39,11 @@ const Ball = (props) => {
       </mesh>
     </Float>
   );
-};
+});
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-    >
+    <Canvas frameloop="always" dpr={window.devicePixelRatio}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
@@ -58,4 +54,35 @@ const BallCanvas = ({ icon }) => {
   );
 };
 
+// const BallCanvas = ({ icon }) => {
+//   const canvasRef = useRef(null);
+
+//   useEffect(() => {
+//     const canvas = canvasRef.current;
+
+//     return () => {
+//       canvas?.remove();
+//     };
+//   }, []);
+//   return (
+//     <div ref={canvasRef} style={{ width: "100%", height: "100%" }}>
+//       <Canvas
+//         frameloop="always"
+//         dpr={window.devicePixelRatio}
+//         gl={{ preserveDrawingBuffer: true }}
+//       >
+//         <Suspense fallback={<CanvasLoader />}>
+//           <OrbitControls enableZoom={false} />
+//           <Ball imgUrl={icon} />
+//         </Suspense>
+
+//         <Preload all />
+//       </Canvas>
+//     </div>
+//   );
+// };
+
 export default BallCanvas;
+
+
+

@@ -9,7 +9,7 @@ const Computers = ({ isMobile }) => {
   const computer = useGLTF("./lego/scene.gltf");
 
   return (
-    <mesh position={[1, -3, 0]}>
+    <mesh position={[-5, -8, 0]}>
       <hemisphereLight intensity={1} groundColor="#9051d9" color="#8530d1"/>
       {/* <spotLight position={[-40, 50, 10]} angle={0.12} penumbra={1} intensity={0.8} castShadow />
       <spotLight position={[40, 50, 10]} angle={0.12} penumbra={1} intensity={0.8} castShadow /> */}
@@ -24,15 +24,15 @@ const Computers = ({ isMobile }) => {
       <pointLight position={[0, 10, 0]} intensity={0.5} color="#bda8ee"/>
       <primitive
         object={computer.scene}
-        scale={isMobile ? 2 : 0.018}
+        scale={isMobile ? 2 : 0.04}
         position={isMobile ? [0, 0, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.5,0,0.0]}
+        rotation={[0.2,2.1,-0.2]}
       />
     </mesh>
   );
 };
 
-const ComputersCanvas = () => {
+const Dragon = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [-20, -10, -2], fov: 30 }}
+      camera={{ position: [-100, -100, -20], fov: 15 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -77,4 +77,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default ComputersCanvas;
+export default Dragon;
