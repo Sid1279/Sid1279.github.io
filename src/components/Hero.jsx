@@ -1,7 +1,60 @@
 import { motion } from "framer-motion";
-
+import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+
+const TypewriterText = () => {
+  const texts = [
+    "  I'm a 2A Computer Engineering Student at the University of Waterloo.",
+    "  I'm a Data Scientist intern at Tyson Foods.",
+    "  I'm a Robotics enthusiast!",
+    "  I love LEGO :)"
+  ];
+
+  const [textIndex, setTextIndex] = useState(0);
+  const currentText = texts[textIndex];
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    let currentIndex = 0;
+    let timeoutId;
+
+    const typeText = () => {
+      if (currentIndex < currentText.length-1) {
+        setDisplayedText((prevText) => prevText + currentText[currentIndex]);
+        currentIndex++;
+        timeoutId = setTimeout(typeText, 100);
+      } else {
+        timeoutId = setTimeout(backspaceText, 1000);
+      }
+    };
+
+    const backspaceText = () => {
+      if (currentIndex >= 0) {
+        setDisplayedText((prevText) => prevText.slice(0, -1));
+        currentIndex--;
+        timeoutId = setTimeout(backspaceText, 50);
+      } else {
+        clearTimeout(timeoutId);
+        setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        setDisplayedText("");
+      }
+    };
+
+    timeoutId = setTimeout(typeText, 1000);
+
+    return () => clearTimeout(timeoutId);
+  }, [currentText]);
+
+  return (
+    <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+      {displayedText}
+    </p>
+  );
+};
+
+
+
 
 const Hero = () => {
   return (
@@ -10,7 +63,7 @@ const Hero = () => {
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-5 h-5 rounded-full bg-[#FC6A03]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
@@ -18,20 +71,10 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hey! I'm <span className='text-[#915EFF]'>Siddharth</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a data science enthusiast <br></br>
-            and a UI developer.
-          </p>
+          <TypewriterText />
         </div>
       </div>
       <ComputersCanvas />
-
-      {/* <div className = "absolute top-0 right-0 bottom-0 flex justify-between " >
-        <div className="w-[50vw] h-[40vw]">
-          <ComputersCanvas />
-        </div>
-      </div> */}
-
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import resumePDF from "../assets/Resume.pdf";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
+import logo from "../assets/logo.png";
+
+const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = resumePDF;
+  link.download = "Siddharth_Resume.pdf";
+  link.click();
+};
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -34,20 +42,26 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
-          className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
+        <a
+          href="https://drive.google.com/file/d/1XctrGAApgnjp4PIoMYAQ-gi0bHfHaYjI/view?usp=sharing"
+          download="Siddharth_Resume.pdf"
+          className="flex items-center gap-2"
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-white text-[18px] font-bold flex">
+            Resume
           </p>
-        </Link>
+        </a>
+        {/* <a
+          onClick={downloadResume}
+          className="flex items-center gap-2"
+        >
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+            Resume
+          </p>
+        </a> */}
+
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
