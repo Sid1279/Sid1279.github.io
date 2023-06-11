@@ -8,7 +8,8 @@ const TypewriterText = () => {
     "  I'm a 2A Computer Engineering Student at the University of Waterloo.",
     "  I'm a Data Scientist intern at Tyson Foods.",
     "  I'm a Robotics enthusiast!",
-    "  I love LEGO :)"
+    "  I love LEGO! This is a model of one of my dragons :)",
+    "  Feel free to reach out to me through the contact section."
   ];
 
   const [textIndex, setTextIndex] = useState(0);
@@ -69,7 +70,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hey! I'm <span className='text-[#915EFF]'>Siddharth</span>
+            Hey! I'm <span className='text-[#915EFF]'>Siddharth</span> 👋
           </h1>
           <TypewriterText />
         </div>
