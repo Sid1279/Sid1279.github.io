@@ -1,48 +1,3 @@
-import {
-  // logo,
-  // Python,
-  // coding,
-  // datascience,
-  // uxdesign,
-  // robotics,
-  // github,
-  // menu,
-  // close,
-  // css,
-  // git,
-  // html,
-  // javascript,
-  // mongodb,
-  // nodejs,
-  // reactjs,
-  // tailwind,
-  // typescript,
-  // threejs,
-  // Arduino,
-  // Cpp,
-  // express,
-  // Firebase,
-  // gitlab,
-  // Jupyter,
-  // keras,
-  // mui,
-  // NumPy,
-  // OpenCV,
-  // pandas,
-  // PyTorch,
-  // SageMaker,
-  // scikit,
-  // TensorFlow,
-
-  // meta,
-  // shopify,
-  // starbucks,
-  // tesla,
-  carrent,
-  jobit,
-  tripguide,
-} from "../assets";
-
 export const navLinks = [
   {
     id: "about",
@@ -270,7 +225,7 @@ const testimonials = [
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
   },
 ];
 
@@ -293,7 +248,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
     source_code_link: "https://github.com/",
   },
   {
@@ -314,7 +269,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
     source_code_link: "https://github.com/",
   },
   {
@@ -335,7 +290,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
     source_code_link: "https://github.com/",
   },
     {
@@ -356,7 +311,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
     source_code_link: "https://github.com/",
   },
   {
@@ -377,7 +332,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
     source_code_link: "https://github.com/",
   },
   {
@@ -398,7 +353,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
     source_code_link: "https://github.com/",
   },
 ];

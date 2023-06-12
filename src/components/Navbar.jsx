@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
 import logo from "../assets/logo.png";
 
 const downloadResume = () => {
@@ -79,7 +78,7 @@ const Navbar = () => {
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
-            src={toggle ? close : menu}
+            src={toggle ? "https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=close" : "https://i.pinimg.com/originals/ee/c0/71/eec071442e9a1b8e017c5a7c1853b880.jpg"}
             alt='menu'
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
