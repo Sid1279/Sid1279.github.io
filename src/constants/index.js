@@ -1,13 +1,13 @@
 import {
-  logo,
+  // logo,
   // Python,
   // coding,
   // datascience,
   // uxdesign,
   // robotics,
-  github,
-  menu,
-  close,
+  // github,
+  // menu,
+  // close,
   // css,
   // git,
   // html,
@@ -61,143 +61,143 @@ export const navLinks = [
 const services = [
   {
     title: "ML Engineering",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662393644888064/coding.png?width=640&height=640",
   },
   {
     title: "Data Science",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662391967154287/data-science.png?width=640&height=640",
   },
   {
     title: "UI Design",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662285792563230/ux-design.png?width=640&height=640",
   },
   {
     title: "Robotics",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662285138251846/robotic-arm.png?width=640&height=640",
   },
 ];
 
 const technologies = [
   {
     name: "Python",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662421834805279/Python.png?width=605&height=662",
   },
   {
     name: "C++",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662392898310154/Cpp.png?width=590&height=662",
   },
   {
     name: "JavaScript",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663500274237460/javascript.png?width=300&height=300",
   },
   {
     name: "HTML 5",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663499997429770/html.png?width=300&height=300",
   },
   {
     name: "CSS 3",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663499330535534/css.png?width=300&height=300",
   },
   {
     name: "React JS",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663719929958408/reactjs.png?width=120&height=120",
   },
   {
     name: "TypeScript",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663500693684324/typescript.png?width=300&height=300",
   },
 
 
-  // {
-  //   name: "NumPy",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "OpenCV",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Pandas",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "PyTorch",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "TensorFlow",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "scikit-learn",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Keras",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
+  {
+    name: "NumPy",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662393896534098/NumPy.png?width=662&height=662",
+  },
+  {
+    name: "OpenCV",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662391719702638/OpenCV.png?width=713&height=662",
+  },
+  {
+    name: "Pandas",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662285993881651/pandas.png?width=375&height=375",
+  },
+  {
+    name: "PyTorch",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662393401626624/PyTorch.png?width=863&height=561",
+  },
+  {
+    name: "TensorFlow",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662421562167488/TensorFlow.png?width=620&height=662",
+  },
+  {
+    name: "scikit-learn",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662392667603097/sklearn.png?width=1231&height=662",
+  },
+  {
+    name: "Keras",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662286224564246/keras.png?width=662&height=662",
+  },
 
 
 
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Node JS",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "MongoDB",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Three JS",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Express JS",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Firebase",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "git",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
+  {
+    name: "Tailwind CSS",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663500492349451/tailwind.png?width=300&height=300",
+  },
+  {
+    name: "Node JS",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663719707656222/nodejs.png?width=300&height=300",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663719208538122/mongodb.png?width=300&height=300",
+  },
+  {
+    name: "Three JS",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/768px-Three.js_Icon.svg.png?20211115112438",
+  },
+  {
+    name: "Express JS",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662286656581652/express.png?width=300&height=300",
+  },
+  {
+    name: "Firebase",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662285347958875/Firebase.png?width=375&height=375",
+  },
+  {
+    name: "git",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117663499565400084/git.png?width=300&height=300",
+  },
 
 
 
-  // {
-  //   name: "gitlab",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Arduino",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Material UI",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "Jupyter",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
-  // {
-  //   name: "AWS SageMaker",
-  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-  // },
+  {
+    name: "gitlab",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662392365625474/gitlab.png?width=716&height=662",
+  },
+  {
+    name: "Arduino",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662421314711622/Arduino.png?width=973&height=662",
+  },
+  {
+    name: "Material UI",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662285574447184/mui.png?width=662&height=662",
+  },
+  {
+    name: "Jupyter",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662393128976404/Jupyter.png?width=571&height=662",
+  },
+  {
+    name: "AWS SageMaker",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
+  },
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
-    iconBg: "#383E56",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117664891990450196/Tyson.png?width=681&height=662",
+    iconBg: "#FFFFFF",
     date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -209,7 +209,7 @@ const experiences = [
   {
     title: "React Native Developer",
     company_name: "Tesla",
-    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+    icon: "https://media.discordapp.net/attachments/1057488327835652127/1117664891990450196/Tyson.png?width=681&height=662",
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
