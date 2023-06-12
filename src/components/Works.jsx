@@ -65,65 +65,7 @@ const ProjectCard = ({
       </Tilt>
     </motion.div>
   );
-}
-
-// const Works = () => {
-//   const [startIndex, setStartIndex] = useState(0);
-//   const visibleProjects = projects.concat(projects.slice(0, 2)).slice(startIndex, startIndex + 3);
-
-//   const handleNext = () => {
-//     setStartIndex((prevIndex) => (prevIndex + 1) % (projects.length));
-//   };
-
-//   const handlePrev = () => {
-//     setStartIndex((prevIndex) => (prevIndex === 0 ? projects.length - 1 : prevIndex - 1));
-//   };
-
-//   return (
-//     <>
-//       <motion.div variants={textVariant()}>
-//         <p className={`${styles.sectionSubText} `}>My Personal</p>
-//         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
-//       </motion.div>
-
-//       <div className='w-full flex'>
-//          <motion.p
-//           variants={fadeIn("", "", 0.1, 1)}
-//           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-//           >
-//             Following projects showcases my skills and experience through
-//             real-world examples of my work. Each project is briefly described with
-//             links to code repositories and live demos in it. It reflects my
-//             ability to solve complex problems, work with different technologies,
-//             and manage projects effectively.
-//           </motion.p>
-//       </div>
-//       <div className="mt-20 flex flex-wrap gap-7">
-//         {visibleProjects.map((project, index) => (
-//           <ProjectCard key={`project-${index}`} index={index} {...project} />
-//         ))}
-//       </div>
-
-//       {/* Previous and Next buttons */}
-//       <div className="flex justify-center mt-5">
-//         <button
-//           className={`mr-2 px-3 py-2 rounded-md bg-white text-tertiary`}
-//           onClick={handlePrev}
-//         >
-//           <AiOutlineArrowLeft />
-//         </button>
-//         <button
-//           className={`ml-2 px-3 py-2 rounded-md bg-white text-tertiary`}
-//           onClick={handleNext}
-//         >
-//           <AiOutlineArrowRight />
-//         </button>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default SectionWrapper(Works, "");
+};
 
 const Works = () => {
   const [startIndex, setStartIndex] = useState(0);
@@ -175,7 +117,7 @@ const Works = () => {
       </div>
 
       {/* Type Filter Buttons */}
-      <div className="flex justify-center mt-5">
+      <div className="flex justify-center mt-10">
         <button
           className={`mr-2 px-3 py-2 rounded-md bg-tertiary text-white ${selectedType === "all" ? "bg-white text-tertiary" : ""}`}
           onClick={() => handleTypeFilter("all")}
@@ -223,8 +165,6 @@ const Works = () => {
 };
 
 export default SectionWrapper(Works, "");
-
-
 
 
 
