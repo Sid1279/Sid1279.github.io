@@ -206,13 +206,13 @@ const Works = () => {
       {/* Previous and Next buttons */}
       <div className="flex justify-center mt-5">
         <button
-          className={`mr-2 px-3 py-2 rounded-md bg-white text-tertiary`}
+          className={`mr-2 px-3 py-2 rounded-md bg-tertiary text-white`}
           onClick={() => handlePrev(selectedType === "software" ? softwareProjects : selectedType === "hardware" ? hardwareProjects : projects)}
         >
           <AiOutlineArrowLeft />
         </button>
         <button
-          className={`ml-2 px-3 py-2 rounded-md bg-white text-tertiary`}
+          className={`ml-2 px-3 py-2 rounded-md bg-tertiary text-white`}
           onClick={() => handleNext(selectedType === "software" ? softwareProjects : selectedType === "hardware" ? hardwareProjects : projects)}
         >
           <AiOutlineArrowRight />
