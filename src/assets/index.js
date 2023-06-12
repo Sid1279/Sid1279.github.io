@@ -8,41 +8,41 @@ import datascience from "./data-science.png";
 import uxdesign from "./ux-design.png";
 import robotics from "./robotic-arm.png";
 
-import css from "./tech/css.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-import Arduino from "./tech/Arduino.png";
-import Cpp from "./tech/Cpp.png";
-import express from "./tech/express.png";
-import Firebase from "./tech/Firebase.png";
-import gitlab from "./tech/gitlab.png";
-import Jupyter from "./tech/Jupyter.png";
-import keras from "./tech/keras.png";
-import mui from "./tech/mui.png";
-import NumPy from "./tech/NumPy.png";
-import OpenCV from "./tech/OpenCV.png";
-import pandas from "./tech/pandas.png";
-import Python from "./tech/Python.png";
-import PyTorch from "./tech/PyTorch.png";
-import SageMaker from "./tech/SageMaker.png";
-import scikit from "./tech/sklearn.png";
-import TensorFlow from "./tech/TensorFlow.png";
+import css from "./css.png";
+import git from "./git.png";
+import html from "./html.png";
+import javascript from "./javascript.png";
+import mongodb from "./mongodb.png";
+import nodejs from "./nodejs.png";
+import reactjs from "./reactjs.png";
+import tailwind from "./tailwind.png";
+import typescript from "./typescript.png";
+import threejs from "./threejs.svg";
+import Arduino from "./Arduino.png";
+import Cpp from "./Cpp.png";
+import express from "./express.png";
+import Firebase from "./Firebase.png";
+import gitlab from "./gitlab.png";
+import Jupyter from "./Jupyter.png";
+import keras from "./keras.png";
+import mui from "./mui.png";
+import NumPy from "./NumPy.png";
+import OpenCV from "./OpenCV.png";
+import pandas from "./pandas.png";
+import Python from "./Python.png";
+import PyTorch from "./PyTorch.png";
+import SageMaker from "./SageMaker.png";
+import scikit from "./sklearn.png";
+import TensorFlow from "./TensorFlow.png";
 
 
 
 
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import meta from "./meta.png";
+import shopify from "./shopify.png";
+import starbucks from "./starbucks.png";
+import tesla from "./tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
