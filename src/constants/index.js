@@ -253,7 +253,7 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Hardware 1",
+    name: "Hardware 2",
     type: "hardware",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
@@ -275,7 +275,7 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Software 2",
+    name: "Software 3",
     type: "software",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -297,7 +297,7 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-  name: "Software 3",
+  name: "Software 4",
   type: "software",
   description:
     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
@@ -319,7 +319,7 @@ const projects = [
   source_code_link: "https://github.com/",
 },
 {
-  name: "Hardware 2",
+  name: "Hardware 5",
   type: "hardware",
   description:
     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
@@ -341,7 +341,7 @@ const projects = [
   source_code_link: "https://github.com/",
 },
 {
-  name: "Software 4",
+  name: "Software 6",
   type: "software",
   description:
     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -363,7 +363,7 @@ const projects = [
   source_code_link: "https://github.com/",
 },
 {
-  name: "Hardware 3",
+  name: "Hardware 7",
   type: "hardware",
   description:
     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
