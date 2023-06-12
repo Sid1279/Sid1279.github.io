@@ -92,7 +92,7 @@ const technologies = [
   },
   {
     name: "HTML 5",
-    icon: html,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     name: "CSS 3",
