@@ -11,16 +11,16 @@ const Tech = () => {
   const [startIndex, setStartIndex] = useState(0);
 
   const handleNext = () => {
-    setStartIndex((prevIndex) => prevIndex + 4);
+    setStartIndex((prevIndex) => prevIndex + 7);
   };
 
   const handlePrev = () => {
-    setStartIndex((prevIndex) => Math.max(prevIndex - 4, 0));
+    setStartIndex((prevIndex) => Math.max(prevIndex - 7, 0));
   };
 
-  const visibleTechnologies = technologies.slice(startIndex, startIndex + 4);
+  const visibleTechnologies = technologies.slice(startIndex, startIndex + 7);
   const isPrevDisabled = startIndex === 0;
-  const isNextDisabled = startIndex + 4 >= technologies.length;
+  const isNextDisabled = startIndex + 7 >= technologies.length;
 
   return (
     <div>
