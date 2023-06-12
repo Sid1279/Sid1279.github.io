@@ -1,43 +1,43 @@
 import {
   logo,
-  coding,
-  datascience,
-  uxdesign,
-  robotics,
+  // Python,
+  // coding,
+  // datascience,
+  // uxdesign,
+  // robotics,
   github,
   menu,
   close,
-  css,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  tailwind,
-  typescript,
-  threejs,
-  Arduino,
-  Cpp,
-  express,
-  Firebase,
-  gitlab,
-  Jupyter,
-  keras,
-  mui,
-  NumPy,
-  OpenCV,
-  pandas,
-  PyTorch,
-  SageMaker,
-  scikit,
-  TensorFlow,
-  Python,
+  // css,
+  // git,
+  // html,
+  // javascript,
+  // mongodb,
+  // nodejs,
+  // reactjs,
+  // tailwind,
+  // typescript,
+  // threejs,
+  // Arduino,
+  // Cpp,
+  // express,
+  // Firebase,
+  // gitlab,
+  // Jupyter,
+  // keras,
+  // mui,
+  // NumPy,
+  // OpenCV,
+  // pandas,
+  // PyTorch,
+  // SageMaker,
+  // scikit,
+  // TensorFlow,
 
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  // meta,
+  // shopify,
+  // starbucks,
+  // tesla,
   carrent,
   jobit,
   tripguide,
@@ -61,34 +61,34 @@ export const navLinks = [
 const services = [
   {
     title: "ML Engineering",
-    icon: coding,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     title: "Data Science",
-    icon: datascience,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     title: "UI Design",
-    icon: uxdesign,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     title: "Robotics",
-    icon: robotics,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
 ];
 
 const technologies = [
   {
     name: "Python",
-    icon: Python,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     name: "C++",
-    icon: Cpp,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     name: "HTML 5",
@@ -96,107 +96,107 @@ const technologies = [
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
   },
 
 
-  {
-    name: "NumPy",
-    icon: NumPy,
-  },
-  {
-    name: "OpenCV",
-    icon: OpenCV,
-  },
-  {
-    name: "Pandas",
-    icon: pandas,
-  },
-  {
-    name: "PyTorch",
-    icon: PyTorch,
-  },
-  {
-    name: "TensorFlow",
-    icon: TensorFlow,
-  },
-  {
-    name: "scikit-learn",
-    icon: scikit,
-  },
-  {
-    name: "Keras",
-    icon: keras,
-  },
+  // {
+  //   name: "NumPy",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "OpenCV",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Pandas",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "PyTorch",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "TensorFlow",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "scikit-learn",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Keras",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
 
 
 
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "Express JS",
-    icon: express,
-  },
-  {
-    name: "Firebase",
-    icon: Firebase,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Node JS",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "MongoDB",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Three JS",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Express JS",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Firebase",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "git",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
 
 
 
-  {
-    name: "gitlab",
-    icon: gitlab,
-  },
-  {
-    name: "Arduino",
-    icon: Arduino,
-  },
-  {
-    name: "Material UI",
-    icon: mui,
-  },
-  {
-    name: "Jupyter",
-    icon: Jupyter,
-  },
-  {
-    name: "AWS SageMaker",
-    icon: SageMaker,
-  },
+  // {
+  //   name: "gitlab",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Arduino",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Material UI",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "Jupyter",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
+  // {
+  //   name: "AWS SageMaker",
+  //   icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
+  // },
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
-    icon: starbucks,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -209,7 +209,7 @@ const experiences = [
   {
     title: "React Native Developer",
     company_name: "Tesla",
-    icon: tesla,
+    icon: "https://cdn.pixabay.com/photo/2020/10/22/06/25/computer-5675047_640.png",
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
