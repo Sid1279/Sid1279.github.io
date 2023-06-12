@@ -157,7 +157,7 @@ const BallCanvas = ({ icon }) => {
       {visible && (
         <Canvas frameloop="always" dpr={window.devicePixelRatio}>
           <Suspense fallback={<CanvasLoader />}>
-            <OrbitControls enableZoom={false} />
+            <OrbitControls enableZoom={false} enablePan = {false} />
             <Ball imgUrl={icon} />
           </Suspense>
           <Preload all />

@@ -15,7 +15,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "ML Engineering",
+    title: "Deep Learning",
     icon: "https://media.discordapp.net/attachments/1057488327835652127/1117662393644888064/coding.png?width=640&height=640",
   },
   {
@@ -231,7 +231,8 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Software 1",
+    type: "software",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -252,7 +253,8 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Hardware 1",
+    type: "hardware",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -273,7 +275,8 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Software 2",
+    type: "software",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -293,69 +296,94 @@ const projects = [
     image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
     source_code_link: "https://github.com/",
   },
+  {
+  name: "Software 3",
+  type: "software",
+  description:
+    "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+  tags: [
     {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
-    source_code_link: "https://github.com/",
-  },
+      name: "react",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "mongodb",
+      color: "green-text-gradient",
+    },
+    {
+      name: "tailwind",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
+  source_code_link: "https://github.com/",
+},
+{
+  name: "Hardware 2",
+  type: "hardware",
+  description:
+    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+  tags: [
+    {
+      name: "react",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "restapi",
+      color: "green-text-gradient",
+    },
+    {
+      name: "scss",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
+  source_code_link: "https://github.com/",
+},
+{
+  name: "Software 4",
+  type: "software",
+  description:
+    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  tags: [
+    {
+      name: "nextjs",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "supabase",
+      color: "green-text-gradient",
+    },
+    {
+      name: "css",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
+  source_code_link: "https://github.com/",
+},
+{
+  name: "Hardware 3",
+  type: "hardware",
+  description:
+    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+  tags: [
+    {
+      name: "react",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "restapi",
+      color: "green-text-gradient",
+    },
+    {
+      name: "scss",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
+  source_code_link: "https://github.com/",
+},
 ];
 
 export { services, technologies, experiences, testimonials, projects };

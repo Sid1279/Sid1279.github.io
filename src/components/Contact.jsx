@@ -51,7 +51,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Thank you! I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -63,7 +63,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("The form was not submitted. Please try again.");
         }
       );
   };
@@ -76,7 +76,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch with me via email</p>
+        <p className={styles.sectionSubText}>Get in touch via email</p>
         <h3 className={styles.sectionHeadText}>Contact me</h3>
 
         <form

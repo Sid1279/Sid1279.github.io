@@ -11,21 +11,21 @@ const Tech = () => {
   const [startIndex, setStartIndex] = useState(0);
 
   const handleNext = () => {
-    setStartIndex((prevIndex) => prevIndex + 5);
+    setStartIndex((prevIndex) => prevIndex + 6);
   };
 
   const handlePrev = () => {
-    setStartIndex((prevIndex) => Math.max(prevIndex - 5, 0));
+    setStartIndex((prevIndex) => Math.max(prevIndex - 6, 0));
   };
 
-  const visibleTechnologies = technologies.slice(startIndex, startIndex + 5);
+  const visibleTechnologies = technologies.slice(startIndex, startIndex + 6);
   const isPrevDisabled = startIndex === 0;
-  const isNextDisabled = startIndex + 5 >= technologies.length;
+  const isNextDisabled = startIndex + 6 >= technologies.length;
 
   return (
     <div>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>What I have used in the past</p>
+        <p className={`${styles.sectionSubText} `}>My familiarity with</p>
         <h2 className={`${styles.sectionHeadText}`}>Tools and Technologies</h2>
       </motion.div>
       <div className="flex flex-col items-center mt-12">
