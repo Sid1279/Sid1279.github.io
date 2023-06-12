@@ -1,9 +1,12 @@
 {
+  "homepage": "https://sid1279.github.io/3dfolio/",
   "name": "3dfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -13,6 +16,7 @@
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.1",
     "framer-motion": "^9.0.7",
+    "gh-pages": "^5.0.0",
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
