@@ -119,19 +119,19 @@ const Works = () => {
       {/* Type Filter Buttons */}
       <div className="flex justify-center mt-10">
         <button
-          className={`mr-2 px-3 py-2 rounded-md bg-tertiary text-white ${selectedType === "all" ? "bg-white text-tertiary" : ""}`}
+          className={`mr-2 px-3 py-2 rounded-md ${selectedType === "all" ? "bg-white text-tertiary" : "bg-tertiary text-white"}`}
           onClick={() => handleTypeFilter("all")}
         >
           All
         </button>
         <button
-          className={`mx-2 px-3 py-2 rounded-md bg-tertiary text-white  ${selectedType === "software" ? "bg-white text-tertiary" : ""}`}
+          className={`mx-2 px-3 py-2 rounded-md ${selectedType === "software" ? "bg-white text-tertiary" : "bg-tertiary text-white"}`}
           onClick={() => handleTypeFilter("software")}
         >
           Software
         </button>
         <button
-          className={`ml-2 px-3 py-2 rounded-md bg-tertiary text-white  ${selectedType === "hardware" ? "bg-white text-tertiary" : ""}`}
+          className={`ml-2 px-3 py-2 rounded-md ${selectedType === "hardware" ? "bg-white text-tertiary" : "bg-tertiary text-white"}`}
           onClick={() => handleTypeFilter("hardware")}
         >
           Hardware
