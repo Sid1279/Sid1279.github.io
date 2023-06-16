@@ -230,7 +230,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Software 1",
+    name: "LEGO Website",
     type: "software",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
@@ -248,11 +248,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
-    source_code_link: "https://github.com/",
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1119315951805014217/dragonbrickscatalogue.jpg?width=846&height=662",
+    source_code_link: "https://github.com/Sid1279/LEGO-Website",
   },
   {
-    name: "Hardware 2",
+    name: "SumoBot",
     type: "hardware",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
@@ -270,11 +270,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
-    source_code_link: "https://github.com/",
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1119313962434048121/sumo_33.jpg?width=896&height=661",
+    source_code_link: "https://github.com/Sid1279/sumo_bot",
   },
   {
-    name: "Software 3",
+    name: "Weather App",
     type: "software",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -292,11 +292,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
-    source_code_link: "https://github.com/",
+    image: "https://media.discordapp.net/attachments/1057488327835652127/1118237383800930415/image.png?width=1037&height=662",
+    source_code_link: "https://github.com/Sid1279/Weather-App",
   },
   {
-  name: "Software 4",
+  name: "Cursor Controller",
   type: "software",
   description:
     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
@@ -314,11 +314,11 @@ const projects = [
       color: "pink-text-gradient",
     },
   ],
-  image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1119317532390723706/image.png?width=898&height=662",
   source_code_link: "https://github.com/",
 },
 {
-  name: "Hardware 5",
+  name: "Wall-E",
   type: "hardware",
   description:
     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
@@ -336,11 +336,11 @@ const projects = [
       color: "pink-text-gradient",
     },
   ],
-  image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
-  source_code_link: "https://github.com/",
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1119322001409052824/image.png?width=1122&height=662",
+  source_code_link: "https://github.com/Sid1279/Wall-E",
 },
 {
-  name: "Software 6",
+  name: "MNIST image classification",
   type: "software",
   description:
     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -358,11 +358,33 @@ const projects = [
       color: "pink-text-gradient",
     },
   ],
-  image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1119319644872908890/image.png?width=735&height=662",
   source_code_link: "https://github.com/",
 },
 {
-  name: "Hardware 7",
+  name: "CIFAR-10 image classification",
+  type: "software",
+  description:
+    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  tags: [
+    {
+      name: "nextjs",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "supabase",
+      color: "green-text-gradient",
+    },
+    {
+      name: "css",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1119331721935065149/image.png?width=812&height=662",
+  source_code_link: "https://github.com/",
+},
+{
+  name: "6DOF arm",
   type: "hardware",
   description:
     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
@@ -380,9 +402,76 @@ const projects = [
       color: "pink-text-gradient",
     },
   ],
-  image: "https://media.discordapp.net/attachments/1057488327835652127/1117662286451069058/SageMaker.png?width=375&height=375",
+  image: "https://media.discordapp.net/attachments/1103364308882178069/1106683320483450897/image.png?width=1156&height=662",
   source_code_link: "https://github.com/",
 },
+{
+  name: "Lane Detector",
+  type: "software",
+  description:
+    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  tags: [
+    {
+      name: "nextjs",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "supabase",
+      color: "green-text-gradient",
+    },
+    {
+      name: "css",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1119318066925408326/image.png?width=1180&height=662",
+  source_code_link: "https://github.com/",
+},
+{
+  name: "Predictors",
+  type: "software",
+  description:
+    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  tags: [
+    {
+      name: "nextjs",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "supabase",
+      color: "green-text-gradient",
+    },
+    {
+      name: "css",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1119318403249873117/image.png?width=1137&height=662",
+  source_code_link: "https://github.com/",
+},
+{
+  name: "Circuit Labs + Schematics",
+  type: "hardware",
+  description:
+    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+  tags: [
+    {
+      name: "react",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "restapi",
+      color: "green-text-gradient",
+    },
+    {
+      name: "scss",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1057488327835652127/1119323761246744596/image.png?width=1218&height=662",
+  source_code_link: "https://github.com/Sid1279/Arduino-labs",
+},
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };

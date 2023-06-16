@@ -47,11 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I have a diverse range of interests that span multiple domains in technology. I am 
+        I have a diverse range of interests that span multiple domains in technology. I'm 
         very passionate about data science, particularly the application of neural networks 
         in solving complex classification problems. I find myself intrigued by the implementation,
         training, and testing of machine learning models using libraries such as pandas, NumPy,
-        TensorFlow and PyTorch. Alongside my data science interests, I am also fascinated by UI design
+        TensorFlow and PyTorch. Alongside my data science interests, I'm also fascinated by UI design
         and I enjoy exploring frameworks such as React, Tailwind CSS, and Three.js. My enthusiasm also 
         extends to robotics projects, where I find fulfillment in combining my hardware skills with my
         creativity to develop unique solutions to real-world problems.
