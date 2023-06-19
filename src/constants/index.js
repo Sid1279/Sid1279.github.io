@@ -233,7 +233,7 @@ const projects = [
     name: "LEGO Website",
     type: "software",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web-based catalogue app that allows users to search through 100k+ LEGO sets, minifigures & parts with an integrated sign-in and register page, and a Chat with GPT3 feature.",
     tags: [
       {
         name: "react",
@@ -244,9 +244,13 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "express",
         color: "pink-text-gradient",
       },
+      {
+        name: "firebase",
+        color: "blue-text-gradient",
+      }
     ],
     image: "https://media.discordapp.net/attachments/1057488327835652127/1119315951805014217/dragonbrickscatalogue.jpg?width=846&height=662",
     source_code_link: "https://github.com/Sid1279/LEGO-Website",
@@ -255,18 +259,18 @@ const projects = [
     name: "SumoBot",
     type: "hardware",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
+      "A fully autonomous, competitive robot that pushes other robots out of a ring - using ultrasonic sensors, infrared sensors and 3D printed a custom bumper to optimize performance.",
+    tags: [  
       {
-        name: "react",
+        name: "Microbit",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Python",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Fritzing",
         color: "pink-text-gradient",
       },
     ],
@@ -277,14 +281,14 @@ const projects = [
     name: "Weather App",
     type: "software",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A web-based app that fetches data from the OpenWeatherMap API given a city & country user input. Added dark mode feature that displays backgrounds based on current weather.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
@@ -299,40 +303,40 @@ const projects = [
   name: "Cursor Controller",
   type: "software",
   description:
-    "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "A Python app that uses OpenCV to track a user's hand movements and control the cursor on the screen. Added a feature that allows users to click by holding all five fingers up.",
   tags: [
     {
-      name: "react",
+      name: "Python",
       color: "blue-text-gradient",
     },
     {
-      name: "mongodb",
+      name: "OpenCV",
       color: "green-text-gradient",
     },
     {
-      name: "tailwind",
+      name: "PyautoGUI",
       color: "pink-text-gradient",
     },
   ],
   image: "https://media.discordapp.net/attachments/1057488327835652127/1119317532390723706/image.png?width=898&height=662",
-  source_code_link: "https://github.com/",
+  source_code_link: "https://github.com/Sid1279/CursorController",
 },
 {
   name: "Wall-E",
   type: "hardware",
   description:
-    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    "A garbage-collecting robot that uses ultrasonic sensors to detect and avoid obstacles, servo motors to pick up garbage and DC motors to control motion. Built as part of the ECE198 Project Studio course.",
   tags: [
     {
-      name: "react",
+      name: "Arduino",
       color: "blue-text-gradient",
     },
     {
-      name: "restapi",
+      name: "STM32",
       color: "green-text-gradient",
     },
     {
-      name: "scss",
+      name: "Fritzing",
       color: "pink-text-gradient",
     },
   ],
@@ -340,43 +344,47 @@ const projects = [
   source_code_link: "https://github.com/Sid1279/Wall-E",
 },
 {
-  name: "MNIST image classification",
+  name: "MNIST classification",
   type: "software",
   description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "An image classification app using a convolutional neural network to classify handwritten digits from the MNIST dataset. Achieved a 98% accuracy on a test set and a 90% accuracy of a custom real-world set.",
   tags: [
     {
-      name: "nextjs",
+      name: "Python",
       color: "blue-text-gradient",
     },
     {
-      name: "supabase",
+      name: "Tensorflow",
       color: "green-text-gradient",
     },
     {
-      name: "css",
+      name: "Keras",
       color: "pink-text-gradient",
+    },
+    {
+      name: "PyTorch",
+      color: "blue-text-gradient",
     },
   ],
   image: "https://media.discordapp.net/attachments/1057488327835652127/1119319644872908890/image.png?width=735&height=662",
   source_code_link: "https://github.com/",
 },
 {
-  name: "CIFAR-10 image classification",
+  name: "CIFAR-10 classification",
   type: "software",
   description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "An image classification app using a multi-layered perceptron neural network (built from scratch) to classify images from the CIFAR-10 dataset. Achieved a 75% accuracy on a test set.",
   tags: [
     {
-      name: "nextjs",
+      name: "Python",
       color: "blue-text-gradient",
     },
     {
-      name: "supabase",
+      name: "NumPy",
       color: "green-text-gradient",
     },
     {
-      name: "css",
+      name: "OOP",
       color: "pink-text-gradient",
     },
   ],
@@ -384,43 +392,21 @@ const projects = [
   source_code_link: "https://github.com/",
 },
 {
-  name: "6DOF arm",
-  type: "hardware",
-  description:
-    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-  tags: [
-    {
-      name: "react",
-      color: "blue-text-gradient",
-    },
-    {
-      name: "restapi",
-      color: "green-text-gradient",
-    },
-    {
-      name: "scss",
-      color: "pink-text-gradient",
-    },
-  ],
-  image: "https://media.discordapp.net/attachments/1103364308882178069/1106683320483450897/image.png?width=1156&height=662",
-  source_code_link: "https://github.com/",
-},
-{
   name: "Lane Detector",
   type: "software",
   description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "A Python app detects lanes on a road given a video/image. Added a feature that displays the lane shape and vehicle offset from the center of the lane. Built as part of McMaster's Venture Academy AI/ML program.",
   tags: [
     {
-      name: "nextjs",
+      name: "Python",
       color: "blue-text-gradient",
     },
     {
-      name: "supabase",
+      name: "OpenCV",
       color: "green-text-gradient",
     },
     {
-      name: "css",
+      name: "Matplotlib",
       color: "pink-text-gradient",
     },
   ],
@@ -431,18 +417,18 @@ const projects = [
   name: "Predictors",
   type: "software",
   description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "Python apps that use linear regression, logistic regression & decision trees to create predictions on various datasets including titanic, SVHN, and admission stats for schools in India.",
   tags: [
     {
-      name: "nextjs",
+      name: "pandas",
       color: "blue-text-gradient",
     },
     {
-      name: "supabase",
+      name: "NumPy",
       color: "green-text-gradient",
     },
     {
-      name: "css",
+      name: "Scikit-learn",
       color: "pink-text-gradient",
     },
   ],
@@ -453,25 +439,46 @@ const projects = [
   name: "Circuit Labs + Schematics",
   type: "hardware",
   description:
-    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    "Arduino labs and schematics for various circuits incorporating a variety of elements including sensors, displays, motors and integrated circuits. Built as part of the TEJ4M0 course.",
   tags: [
     {
-      name: "react",
+      name: "Arduino",
       color: "blue-text-gradient",
     },
     {
-      name: "restapi",
+      name: "Breadboarding",
       color: "green-text-gradient",
     },
     {
-      name: "scss",
+      name: "Fritzing",
       color: "pink-text-gradient",
     },
   ],
   image: "https://media.discordapp.net/attachments/1057488327835652127/1119323761246744596/image.png?width=1218&height=662",
   source_code_link: "https://github.com/Sid1279/Arduino-labs",
 },
-
+{
+  name: "6DOF arm",
+  type: "hardware",
+  description:
+    "Work in Progress: A 6 degree-of-freedom robotic arm that uses inverse kinematics to move to a desired position. A 6 degree-of-freedom robotic arm that uses inverse kinematics to move to a desired position.",
+  tags: [
+    {
+      name: "Arduino",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "Altium",
+      color: "green-text-gradient",
+    },
+    {
+      name: "UART",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "https://media.discordapp.net/attachments/1103364308882178069/1106683320483450897/image.png?width=1156&height=662",
+  source_code_link: "https://github.com/",
+},
 ];
 
 export { services, technologies, experiences, testimonials, projects };
