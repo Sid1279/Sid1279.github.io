@@ -5,11 +5,12 @@ import { Dragon } from "./canvas";
 
 const TypewriterText = () => {
   const texts = [
-    "  I'm a 2A Computer Engineering Student at the University of Waterloo.",
-    "  I'm a Data Scientist intern at Tyson Foods.",
+    "  I'm a 2A Software Engineering Student at the University of Waterloo.",
+    "  I previously worked as a Data Scientist intern at Tyson Foods.",
     "  I'm a Robotics enthusiast!",
     "  I love LEGO! This is a model of one of my dragons :)",
-    "  Feel free to reach out to me through the contact section."
+    "  Feel free to reach out to me through the contact section.",
+    "  Check out my resume on the top left ;)"
   ];
 
   const [textIndex, setTextIndex] = useState(0);
