@@ -275,7 +275,7 @@ const projects = [
       },
     ],
     image: "https://media.discordapp.net/attachments/1057488327835652127/1119313962434048121/sumo_33.jpg?width=896&height=661",
-    source_code_link: "https://github.com/Sid1279/sumo_bot",
+    source_code_link: "https://github.com/Sid1279/SumoBot",
   },
   {
     name: "Weather App",
@@ -367,10 +367,10 @@ const projects = [
     },
   ],
   image: "https://media.discordapp.net/attachments/1057488327835652127/1119319644872908890/image.png?width=735&height=662",
-  source_code_link: "https://github.com/",
+  source_code_link: "https://github.com/Sid1279/MNIST-CNN",
 },
 {
-  name: "CIFAR-10 classification",
+  name: "CIFAR-2 classification",
   type: "software",
   description:
     "An image classification app using a multi-layered perceptron neural network (built from scratch) to classify images from the CIFAR-10 dataset. Achieved a 75% accuracy on a test set.",
@@ -389,7 +389,7 @@ const projects = [
     },
   ],
   image: "https://media.discordapp.net/attachments/1057488327835652127/1119331721935065149/image.png?width=812&height=662",
-  source_code_link: "https://github.com/",
+  source_code_link: "https://github.com/Sid1279/MLP-CIFAR2",
 },
 {
   name: "Lane Detector",
@@ -411,7 +411,7 @@ const projects = [
     },
   ],
   image: "https://media.discordapp.net/attachments/1057488327835652127/1119318066925408326/image.png?width=1180&height=662",
-  source_code_link: "https://github.com/",
+  source_code_link: "https://github.com/Sid1279/McMaster-Venture-Academy",
 },
 {
   name: "Predictors",
@@ -433,7 +433,7 @@ const projects = [
     },
   ],
   image: "https://media.discordapp.net/attachments/1057488327835652127/1119318403249873117/image.png?width=1137&height=662",
-  source_code_link: "https://github.com/",
+  source_code_link: "https://github.com/Sid1279/Regression-Models",
 },
 {
   name: "Circuit Labs + Schematics",
@@ -477,7 +477,7 @@ const projects = [
     },
   ],
   image: "https://media.discordapp.net/attachments/1103364308882178069/1106683320483450897/image.png?width=1156&height=662",
-  source_code_link: "https://github.com/",
+  source_code_link: "https://github.com/MostafaH04/6-DOF-ARM",
 },
 ];
 

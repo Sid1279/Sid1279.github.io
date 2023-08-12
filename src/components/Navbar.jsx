@@ -42,7 +42,7 @@ const Navbar = () => {
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <a
-          href="https://drive.google.com/file/d/1XctrGAApgnjp4PIoMYAQ-gi0bHfHaYjI/view?usp=sharing"
+          href="https://drive.google.com/file/d/15VSKmDrX1ESEHqPNRxDc9CoKTxOtfCRX/view?usp=sharing"
           download="Siddharth_Resume.pdf"
           className="flex items-center gap-2"
         >
