@@ -1,13 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Siddharth's Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth Viswanath</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #0d0d0d;
+            --meta-color: #6b6b6b;
+            --code-header-bg: #f9f9f9;
+            --code-header-text: #6d6d6d;
+            --code-body-bg: #f7f7f8;
+            --code-border: #e5e5e5;
+            --code-text: #24292e;
+            --sh-keyword: #a626a4;
+            --sh-string: #50a14f;
+            --sh-var: #4078f2;
+            --sh-key: #e45649;
+            --sh-bracket: #383a42;
+        }
+
+        body.dark-mode {
+            --bg-color: #212121;
+            --text-color: #ececec;
+            --meta-color: #b4b4b4;
+            --code-header-bg: #2f2f2f;
+            --code-header-text: #b4b4b4;
+            --code-body-bg: #0d0d0d;
+            --code-border: rgba(255,255,255,0.1);
+            --code-text: #d4d4d4;
+            --sh-keyword: #569cd6;
+            --sh-string: #00a67d;
+            --sh-var: #ffffff;
+            --sh-key: #df3079;
+            --sh-bracket: #ffffff;
+            --sh-key-red: #f22c3d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .chat-layout {
+            max-width: 48rem;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            /* margin-bottom: 0rem; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .message-text {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .code-block-wrapper {
+            background-color: var(--code-body-bg);
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            border: 1px solid var(--code-border);
+            transition: border-color 0.3s;
+        }
+
+        .code-header {
+            background-color: var(--code-header-bg);
+            color: var(--code-header-text);
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .copy-btn {
+            background: none;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .code-body {
+            padding: 1rem;
+            font-family: 'Fira Code', 'Consolas', monospace;
+            font-size: 0.875rem;
+            color: var(--code-text);
+            overflow-x: auto;
+            white-space: pre;
+        }
+
+        .kwd { color: var(--sh-keyword); }
+        .str { color: var(--sh-string); }
+        .var { color: var(--sh-var); }
+        .key { color: var(--sh-key); }
+        .bracket { color: var(--sh-bracket); }
+
+        a.code-link {
+            color: var(--sh-key-red);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        a.code-link:hover {
+            border-bottom-color: var(--sh-key-red);
+            cursor: pointer;
+        }
+
+        a.code-email {
+            color: var(--sh-string);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        a.code-email:hover {
+            border-bottom-color: var(--sh-string);
+            cursor: pointer;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid color-mix(in srgb, var(--text-color) 10%, transparent);
+            margin: 1rem 0;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            padding: 8px;
+            color: var(--text-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0rem;
+        }
+
+        .key {
+            color: var(--sh-key-red)
+        }
+
+        .input-container {
+            width: 100%;
+            margin-top: auto;
+            padding-top: 2rem;
+            box-sizing: border-box;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: var(--code-header-bg);
+            border: 1px solid var(--code-border);
+            border-radius: 100px;
+            padding: 8px 12px;
+            gap: 12px;
+        }
+
+        body.dark-mode .search-bar {
+            background-color: #2f2f2f;
+        }
+
+        .search-input {
+            flex-grow: 1;
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+        }
+
+        .search-input::placeholder {
+            color: var(--meta-color);
+        }
+
+        .right-icons {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            color: var(--meta-color);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 4px;
+        }
+
+        .voice-wave-btn {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+
+        .chat-layout {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+        }
+
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+        }
+
+    </style>
+</head>
+
+<body class="dark-mode"> 
+
+    <div class="chat-layout">
+        <header>
+            <!-- <h3> Sure, here's what I could find on Siddharth Viswanath </h3> -->
+            <h3> Intro </h3>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+                <svg id="sun-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg id="moon-icon" style="display:none;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </header>
+        <hr class="divider">
+
+        <div class="message-text">
+            Hi, I'm Siddharth.
+        </div>
+
+        <div class="code-block-wrapper">
+            <div class="code-header">
+                <span>javascript</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    Copy code
+                </button>
+            </div>
+
+            <div class="code-body" id="code-roles">
+<span class="kwd">const</span> <span class="var">incoming</span> = <span class="bracket">{</span>
+    <span class="key"><a href="https://openai.com" target="_blank" class="code-link">OpenAI</a></span>: <span class="str">"Member of Technical Staff"</span>,
+    <span class="key"><a href="https://www.datadoghq.com" target="_blank" class="code-link">Datadog</a></span>: <span class="str">"Software Engineer"</span>
+<span class="bracket">}</span>;
+
+<span class="kwd">const</span> <span class="var">current</span> = <span class="bracket">{</span>
+    <span class="key"><a href="https://www.yugabyte.com" target="_blank" class="code-link">YugaByteDB</a></span>: <span class="str">"Core Databases"</span>
+<span class="bracket">}</span>;
+
+<span class="kwd">const</span> <span class="var">past</span> = <span class="bracket">{</span>
+    <span class="key"><a href="https://www.apple.com" target="_blank" class="code-link">Apple</a></span>: <span class="str">"Software Engineer"</span>
+<span class="bracket">}</span>;</div>
+        </div>
+
+        <h3> Contact </h3>
+        <hr class="divider">
+        <div class="message-text">
+            Feel free to reach out!
+        </div>
+
+        <div class="code-block-wrapper">
+            <div class="code-header">
+                <span>javascript</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    Copy code
+                </button>
+            </div>
+
+<div class="code-body" id="code-contact">
+<span class="kwd">const</span> <span class="var">contact</span> = <span class="bracket">{</span>
+    <span class="key">school</span>: <a href="mailto:siddharth.viswanath@uwaterloo.ca" class="code-email"><span class="str">"siddharth.viswanath@uwaterloo.ca"</span></a>,
+    <span class="key">personal</span>: <a href="mailto:siddharth.n.viswanath@gmail.com" class="code-email"><span class="str">"siddharth.n.viswanath@gmail.com"</span></a>,
+    <span class="key">linkedin</span>: <a href="https://www.linkedin.com/in/siddharth-viswanath/" target="_blank" class="code-email"><span class="str">"linkedin.com/in/siddharth-viswanath"</span></a>
+<span class="bracket">}</span>;</div>
+</div>
+
+
+                <div class="input-container">
+                    <div class="search-bar">
+                        <button class="icon-btn plus-icon" title="Attachment (Disabled)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </button>
+                        <input type="text" placeholder="Ask anything" class="search-input">
+                        <div class="right-icons">
+                            <button class="icon-btn mic-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                            </button>
+<button class="voice-wave-btn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 10v4 M10 5v14 M15 8v8 M20 10v4"></path>
+    </svg>
+</button>
+                        </div>
+                    </div>
+                </div>
+    
+        
+
+</div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        }
+
+        function copyCode(button) {
+            const codeBody = button.parentElement.nextElementSibling;
+            const text = codeBody.innerText;
+
+            navigator.clipboard.writeText(text).then(() => {
+                const originalHTML = button.innerHTML;
+                button.innerHTML = `
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Copied!
+                `;
+                
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                }, 2000);
+            });
+        }
+    </script>
+</body>
 </html>
