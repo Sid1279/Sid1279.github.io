@@ -60,7 +60,7 @@
         .chat-layout {
             max-width: 48rem;
             margin: 0 auto;
-            padding: 4rem 1.5rem;
+            padding: 2rem 1.5rem 6.5rem 1.5rem;
             width: 100%;
             box-sizing: border-box;
             display: flex;
@@ -193,9 +193,15 @@
         }
 
         .input-container {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 100%;
-            margin-top: auto;
-            padding-top: 2rem;
+            max-width: 48rem;
+            padding: 1rem 1.5rem 2rem 1.5rem;
+            background-color: var(--bg-color);
+            z-index: 10;
             box-sizing: border-box;
         }
 
@@ -255,13 +261,6 @@
             cursor: pointer;
         }
 
-
-        .chat-layout {
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 2rem;
-        }
-
         .theme-toggle svg {
             width: 20px;
             height: 20px;
@@ -274,7 +273,6 @@
 
     <div class="chat-layout">
         <header>
-            <!-- <h3> Sure, here's what I could find on Siddharth Viswanath </h3> -->
             <h3> Intro </h3>
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
                 <svg id="sun-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
@@ -309,13 +307,34 @@
     <span class="key"><a href="https://www.yugabyte.com" target="_blank" class="code-link">YugaByte</a></span>: <span class="str">"Core Databases"</span>
 <span class="bracket">}</span>;
 
-<span class="kwd">const</span> <span class="var">past</span> = <span class="bracket">{</span>
+<span class="kwd">const</span> <span class="var">previous</span> = <span class="bracket">{</span>
     <span class="key"><a href="https://www.apple.com" target="_blank" class="code-link">Apple</a></span>: <span class="str">"Software Engineer"</span>
 <span class="bracket">}</span>;</div>
         </div>
 
-        <h3> Contact </h3>
-        <hr class="divider">
+
+
+        <div class="message-text">
+            My interests lie in Machine Learning and Distributed Systems.
+        </div>
+        <div class="code-block-wrapper">
+            <div class="code-header">
+                <span>javascript</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    Copy code
+                </button>
+            </div>
+
+<div class="code-body" id="code-contact">
+<span class="kwd">const</span> <span class="var">publications</span> = <span class="bracket">{</span>
+    <span class="key">FoodVideoQA</span>: [<a href="https://openaccess.thecvf.com/content/CVPR2025W/MTF/html/Shah_FoodVideoQA_A_Novel_Baseline_Framework_for_Dietary_Monitoring_CVPRW_2025_paper.html" class="code-email"><span class="str">"CVPR"</span></a>, <a href="https://ieeexplore.ieee.org/document/11147481/" class="code-email"><span class="str">"IEEE"</span></a>]
+<span class="bracket">}</span>;</div>
+</div>
+
         <div class="message-text">
             Feel free to reach out!
         </div>
